@@ -1,0 +1,126 @@
+﻿@model WonderlandAdventure.Models.BookingViewModel
+@{
+    ViewBag.Title = "Book Your Stay at " + Model.HotelName;
+}
+
+<div class="booking-container">
+    <h1>Book Your Stay at @Model.HotelName</h1>
+
+    @using (Html.BeginForm())
+    {
+        @Html.HiddenFor(m => m.HotelId)
+        @Html.HiddenFor(m => m.HotelName)
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.GuestName)
+            @Html.TextBoxFor(m => m.GuestName, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.GuestName)
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                @Html.LabelFor(m => m.CheckInDate)
+                @Html.TextBoxFor(m => m.CheckInDate, "{0:yyyy-MM-dd}", new { @class = "form-control", type = "date" })
+                @Html.ValidationMessageFor(m => m.CheckInDate)
+            </div>
+            <div class="form-group col-md-6">
+                @Html.LabelFor(m => m.CheckOutDate)
+                @Html.TextBoxFor(m => m.CheckOutDate, "{0:yyyy-MM-dd}", new { @class = "form-control", type = "date" })
+                @Html.ValidationMessageFor(m => m.CheckOutDate)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.NumberOfGuests)
+            @Html.TextBoxFor(m => m.NumberOfGuests, new { @class = "form-control", type = "number", min = "1", max = "10" })
+            @Html.ValidationMessageFor(m => m.NumberOfGuests)
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.SelectedRoomTypeId, "Room Type")
+            @foreach (var roomType in Model.RoomTypes)
+            {
+                <div class="room-type-option">
+                    @Html.RadioButtonFor(m => m.SelectedRoomTypeId, roomType.Id, new { id = "roomType_" + roomType.Id })
+                    <label for="roomType_@roomType.Id">
+                        <strong>@roomType.Name</strong> - $@roomType.BasePrice per night
+                    </label>
+                </div>
+            }
+            @Html.ValidationMessageFor(m => m.SelectedRoomTypeId)
+        </div>
+
+        <div class="form-group">
+            <div class="form-check">
+                @Html.CheckBoxFor(m => m.IncludeBreakfast, new { @class = "form-check-input" })
+                @Html.LabelFor(m => m.IncludeBreakfast, "Include Breakfast (+$15 per night)", new { @class = "form-check-label" })
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Complete Booking</button>
+    }
+</div>
+
+@section styles {
+    <style>
+        .booking-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+            .booking-container h1 {
+                color: #ff6b6b;
+                margin-bottom: 30px;
+                text-align: center;
+            }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .room-type-option {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #eee;
+            border-radius: 5px;
+        }
+
+            .room-type-option:hover {
+                background-color: #f9f9f9;
+            }
+
+        .btn-primary {
+            background-color: #ff6b6b;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: block;
+            width: 100%;
+        }
+
+            .btn-primary:hover {
+                background-color: #ff5252;
+                transform: scale(1.02);
+            }
+
+        .field-validation-error {
+            color: #ff6b6b;
+            font-size: 0.9rem;
+        }
+    </style>
+}

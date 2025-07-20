@@ -1,0 +1,214 @@
+﻿@model WonderlandAdventure.Controllers.TicketOrder
+@{
+    ViewBag.Title = "Buy Tickets";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="page-header">
+    <h1>Purchase Tickets</h1>
+    <p>Choose the perfect ticket option for your magical adventure at WonderLand!</p>
+</div>
+
+<div class="tickets-container">
+    <div class="ticket-options">
+        <!-- Standard Ticket -->
+        <div class="ticket-card">
+            <div class="ticket-badge">MOST POPULAR</div>
+            <img src="/images/t1.jpg" alt="Standard Ticket" class="ticket-image">
+            <div class="ticket-content">
+                <h3 class="ticket-name">Standard Ticket</h3>
+                <div class="ticket-price">$300 <span>per person</span></div>
+                <p class="ticket-description">
+                    Full access to all rides and attractions for one full day of fun and adventure!
+                </p>
+                <div class="ticket-features">
+                    <div class="feature">
+                        <i class="fas fa-check"></i>
+                        <span>Unlimited access to all rides</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check"></i>
+                        <span>Includes basic shows</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check"></i>
+                        <span>Park entry from open to close</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check"></i>
+                        <span>Free parking</span>
+                    </div>
+                </div>
+                <button type="button" class="btn-select" data-ticket-type="standard">Select Ticket</button>
+            </div>
+        </div>
+
+        <!-- Discount Ticket -->
+        <div class="ticket-card">
+            <div class="ticket-badge">DISCOUNT</div>
+            <img src="/images/t3.jpg" alt="Discount Ticket" class="ticket-image">
+            <div class="ticket-content">
+                <h3 class="ticket-name">Discount Ticket</h3>
+                <div class="ticket-price">$150 <span>per person</span></div>
+                <p class="ticket-description">
+                    Special pricing for children (under 12) and seniors (65+). Valid ID required.
+                </p>
+                <div class="ticket-features">
+                    <div class="feature">
+                        <i class="fas fa-check"></i>
+                        <span>Unlimited access to all rides</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check"></i>
+                        <span>Includes basic shows</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check"></i>
+                        <span>Park entry from open to close</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-times"></i>
+                        <span>Parking not included</span>
+                    </div>
+                </div>
+                <button type="button" class="btn-select" data-ticket-type="discount">Select Ticket</button>
+            </div>
+        </div>
+
+        <!-- Show Ticket -->
+        <div class="ticket-card">
+            <img src="https://images.unsplash.com/photo-1547153760-18fc86324498" alt="Show Ticket" class="ticket-image">
+            <div class="ticket-content">
+                <h3 class="ticket-name">Show Ticket</h3>
+                <div class="ticket-price">$60 <span>per person</span></div>
+                <p class="ticket-description">
+                    Access to premium shows and performances only (does not include rides).
+                </p>
+                <div class="ticket-features">
+                    <div class="feature">
+                        <i class="fas fa-check"></i>
+                        <span>Access to all shows</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check"></i>
+                        <span>Priority seating</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-times"></i>
+                        <span>No ride access</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-times"></i>
+                        <span>Parking not included</span>
+                    </div>
+                </div>
+                <button type="button" class="btn-select" data-ticket-type="show">Select Ticket</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="purchase-form">
+        <h2 class="form-title">Complete Your Purchase</h2>
+        @using (Html.BeginForm("ProcessOrder", "Tickets", FormMethod.Post, new { id = "ticket-form" }))
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-row">
+                <div class="form-col">
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.TicketType, "Ticket Type")
+                        @Html.DropDownListFor(m => m.TicketType, new SelectList(new[]
+                        {
+                            new SelectListItem { Text = "Select ticket type", Value = "" },
+                            new SelectListItem { Text = "Standard Ticket - $300", Value = "standard" },
+                            new SelectListItem { Text = "Discount Ticket - $150", Value = "discount" },
+                            new SelectListItem { Text = "Show Ticket - $60", Value = "show" }
+                        }, "Value", "Text"), new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.TicketType, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-col">
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Quantity, "Quantity")
+                        @Html.TextBoxFor(m => m.Quantity, new { @class = "form-control", type = "number", min = "1", max = "10" })
+                        @Html.ValidationMessageFor(m => m.Quantity, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-col">
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.VisitDate, "Visit Date")
+                        @Html.TextBoxFor(m => m.VisitDate, new
+                        {
+                            @class = "form-control",
+                            type = "date",
+                            Value = ViewBag.DefaultDate,
+                            min = DateTime.Now.ToString("yyyy-MM-dd")
+                        })
+                        @Html.ValidationMessageFor(m => m.VisitDate, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-col">
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.PaymentMethod, "Payment Method")
+                        @Html.DropDownListFor(m => m.PaymentMethod, new SelectList(new[]
+                        {
+                            new SelectListItem { Text = "Select payment method", Value = "" },
+                            new SelectListItem { Text = "Credit/Debit Card", Value = "credit" },
+                            new SelectListItem { Text = "PayPal", Value = "paypal" },
+                            new SelectListItem { Text = "Google Pay", Value = "googlepay" },
+                            new SelectListItem { Text = "Apple Pay", Value = "applepay" }
+                        }, "Value", "Text"), new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.PaymentMethod, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.SpecialRequests, "Special Requests (Optional)")
+                @Html.TextAreaFor(m => m.SpecialRequests, new { @class = "form-control", rows = "3", placeholder = "Any special requirements or requests..." })
+            </div>
+
+            <button type="submit" class="btn-purchase">Purchase Tickets</button>
+        }
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            // 设置最小日期为今天
+            var today = new Date().toISOString().split('T')[0];
+            $('#VisitDate').attr('min', today);
+
+            // 点击票卡时自动选择票类型
+            $('.btn-select').click(function () {
+                var ticketType = $(this).data('ticket-type');
+                $('#TicketType').val(ticketType);
+
+                // 滚动到表单
+                $('html, body').animate({
+                    scrollTop: $('.purchase-form').offset().top - 20
+                }, 500);
+            });
+
+            // 表单提交前验证
+            $('#ticket-form').submit(function (e) {
+                if (!$(this).valid()) {
+                    // 滚动到第一个错误字段
+                    var firstError = $('.field-validation-error').first();
+                    if (firstError.length) {
+                        $('html, body').animate({
+                            scrollTop: firstError.closest('.form-group').offset().top - 100
+                        }, 500);
+                    }
+                }
+            });
+
+            // 启用客户端验证
+            $.validator.unobtrusive.parse('#ticket-form');
+        });
+    </script>
+}

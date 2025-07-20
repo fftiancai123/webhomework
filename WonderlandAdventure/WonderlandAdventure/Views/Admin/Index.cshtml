@@ -1,0 +1,130 @@
+﻿@{
+    ViewBag.Title = "Admin Dashboard | WonderLand Adventures";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="page-header">
+    <h1>Park Management Dashboard</h1>
+    <p>Monitor key performance indicators and manage park operations</p>
+</div>
+
+<div class="dashboard-container">
+    <div class="metrics-row">
+        <div class="metric-card" style="border-top: 5px solid var(--visitors);">
+            <div class="metric-icon">
+                <i class="fas fa-users"></i>
+            </div>
+            <h3>Daily Visitors</h3>
+            <div class="metric-value">4,287</div>
+            <div class="metric-change positive">
+                <i class="fas fa-arrow-up"></i> 12% from yesterday
+            </div>
+        </div>
+
+        <div class="metric-card" style="border-top: 5px solid var(--tickets);">
+            <div class="metric-icon">
+                <i class="fas fa-ticket-alt"></i>
+            </div>
+            <h3>Tickets Sold</h3>
+            <div class="metric-value">1,842</div>
+            <div class="metric-change positive">
+                <i class="fas fa-arrow-up"></i> 8% from yesterday
+            </div>
+        </div>
+
+        <div class="metric-card" style="border-top: 5px solid var(--attendance);">
+            <div class="metric-icon">
+                <i class="fas fa-clipboard-check"></i>
+            </div>
+            <h3>Staff Attendance</h3>
+            <div class="metric-value">94%</div>
+            <div class="metric-change negative">
+                <i class="fas fa-arrow-down"></i> 2% from yesterday
+            </div>
+        </div>
+    </div>
+
+    <div class="chart-container">
+        <div class="chart-header">
+            <h2>Visitor & Ticket Trends</h2>
+            <select class="chart-period">
+                <option>Last 7 Days</option>
+                <option>Last 30 Days</option>
+                <option selected>Last 90 Days</option>
+                <option>This Year</option>
+            </select>
+        </div>
+        <div class="chart-placeholder">
+            [Visitor and Ticket Sales Chart Would Appear Here]
+        </div>
+    </div>
+
+    <div class="chart-container">
+        <div class="chart-header">
+            <h2>Staff Attendance Rate</h2>
+            <select class="chart-period">
+                <option>Last 7 Days</option>
+                <option selected>Last 30 Days</option>
+                <option>Last 90 Days</option>
+                <option>This Year</option>
+            </select>
+        </div>
+        <div class="chart-placeholder">
+            [Staff Attendance Chart Would Appear Here]
+        </div>
+    </div>
+
+    <div class="recent-activity">
+        <h2 class="activity-header">Recent Activity</h2>
+
+        <div class="activity-item">
+            <div class="activity-icon">
+                <i class="fas fa-ticket-alt"></i>
+            </div>
+            <div class="activity-details">
+                <div class="activity-title">Peak ticket sales at 2:30 PM - 342 tickets sold</div>
+                <div class="activity-time">Today, 3:45 PM</div>
+            </div>
+        </div>
+
+        <div class="activity-item">
+            <div class="activity-icon">
+                <i class="fas fa-user-clock"></i>
+            </div>
+            <div class="activity-details">
+                <div class="activity-title">Staff attendance below target (94% vs 96% target)</div>
+                <div class="activity-time">Today, 10:30 AM</div>
+            </div>
+        </div>
+
+        <div class="activity-item">
+            <div class="activity-icon">
+                <i class="fas fa-utensils"></i>
+            </div>
+            <div class="activity-details">
+                <div class="activity-title">Food court #3 reached capacity at lunch hour</div>
+                <div class="activity-time">Today, 1:15 PM</div>
+            </div>
+        </div>
+
+        <div class="activity-item">
+            <div class="activity-icon">
+                <i class="fas fa-umbrella-beach"></i>
+            </div>
+            <div class="activity-details">
+                <div class="activity-title">Most popular attraction: Splash Mountain (1,287 visits)</div>
+                <div class="activity-time">Today, 5:00 PM</div>
+            </div>
+        </div>
+
+        <div class="activity-item">
+            <div class="activity-icon">
+                <i class="fas fa-cloud-sun"></i>
+            </div>
+            <div class="activity-details">
+                <div class="activity-title">Good weather contributed to 12% higher attendance</div>
+                <div class="activity-time">Today, 6:30 PM</div>
+            </div>
+        </div>
+    </div>
+</div>

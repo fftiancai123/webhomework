@@ -1,0 +1,122 @@
+﻿@model WonderlandAdventure.Models.TheaterSchedule
+@{
+    ViewBag.Title = "Show Times - " + Model.AttractionName;
+}
+
+<div class="theater-container">
+    <h1>@Model.AttractionName Show Times</h1>
+    <div class="theater-info">
+        <p><i class="fas fa-map-marker-alt"></i> Location: @Model.Location</p>
+        <p><i class="fas fa-users"></i> Capacity: @Model.Capacity guests per show</p>
+        @if (Model.RequiresTicket)
+        {
+            <p><i class="fas fa-ticket-alt"></i> Theater ticket required (not included in park admission)</p>
+        }
+    </div>
+
+    <h2><i class="fas fa-calendar-day"></i> Today's Show Schedule</h2>
+    <div class="show-times">
+        @foreach (var time in Model.ShowTimes)
+        {
+            <div class="time-slot">@time</div>
+        }
+    </div>
+
+    <div class="theater-notice">
+        <p>Each show lasts approximately 30 minutes, followed by a 15-minute intermission.</p>
+        <p>Doors open 20 minutes before each performance.</p>
+    </div>
+
+    <div class="back-link">
+        @Html.ActionLink("Back to Attractions", "Index", null, new { @class = "btn-back" })
+    </div>
+</div>
+
+@section styles {
+    <style>
+        .theater-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+            .theater-container h1 {
+                color: #ff6b6b;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .theater-container h2 {
+                color: #74b9ff;
+                margin: 30px 0 15px;
+                text-align: center;
+            }
+
+        .theater-info {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+            .theater-info p {
+                margin: 10px 0;
+                display: flex;
+                align-items: center;
+            }
+
+            .theater-info i {
+                margin-right: 10px;
+                width: 20px;
+                text-align: center;
+                color: #ff6b6b;
+            }
+
+        .show-times {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .time-slot {
+            padding: 10px 20px;
+            background-color: #ffbe76;
+            color: white;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        .theater-notice {
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #e2f0cb;
+            border-radius: 10px;
+            font-size: 0.9rem;
+        }
+
+        .btn-back {
+            display: inline-block;
+            padding: 10px 25px;
+            background-color: #74b9ff;
+            color: white;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+            .btn-back:hover {
+                background-color: #0984e3;
+                transform: scale(1.05);
+            }
+
+        .back-link {
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+}

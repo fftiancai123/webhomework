@@ -1,0 +1,154 @@
+﻿@model WonderlandAdventure.Models.RegisterViewModel
+@{
+    ViewBag.Title = "Register | WonderLand Adventures";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="page-header">
+    <h1>Create Your Account</h1>
+    <p>Join WonderLand Adventures to access exclusive deals, faster checkout, and personalized recommendations!</p>
+</div>
+
+<div class="registration-container">
+    <div class="registration-form">
+        <h2 class="form-title">Register Now</h2>
+
+        @using (Html.BeginForm("Register", "Account", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-row">
+                <div class="form-col">
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.FirstName)
+                        @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.FirstName)
+                    </div>
+                </div>
+                <div class="form-col">
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.LastName)
+                        @Html.TextBoxFor(m => m.LastName, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.LastName)
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.Email)
+                @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Email)
+            </div>
+
+            <div class="form-row">
+                <div class="form-col">
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Password)
+                        @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.Password)
+                        <small>Must be at least 8 characters</small>
+                    </div>
+                </div>
+                <div class="form-col">
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.ConfirmPassword)
+                        @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.ConfirmPassword)
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-col">
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.BirthDate)
+                        @Html.TextBoxFor(m => m.BirthDate, "{0:yyyy-MM-dd}", new { @class = "form-control", type = "date" })
+                        @Html.ValidationMessageFor(m => m.BirthDate)
+                    </div>
+                </div>
+                <div class="form-col">
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.PhoneNumber)
+                        @Html.TextBoxFor(m => m.PhoneNumber, new { @class = "form-control", type = "tel" })
+                        @Html.ValidationMessageFor(m => m.PhoneNumber)
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.Address)
+                @Html.TextBoxFor(m => m.Address, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Address)
+            </div>
+
+            <div class="form-row">
+                <div class="form-col">
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.City)
+                        @Html.TextBoxFor(m => m.City, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.City)
+                    </div>
+                </div>
+                <div class="form-col">
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.State)
+                        @Html.TextBoxFor(m => m.State, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.State)
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-col">
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Country)
+                        @Html.DropDownListFor(m => m.Country, new SelectList(new[] {
+                            new SelectListItem { Text = "Select Country", Value = "" },
+                            new SelectListItem { Text = "United States", Value = "US" },
+                            new SelectListItem { Text = "Canada", Value = "CA" },
+                            new SelectListItem { Text = "United Kingdom", Value = "UK" },
+                            new SelectListItem { Text = "Australia", Value = "AU" },
+                            new SelectListItem { Text = "Japan", Value = "JP" },
+                            new SelectListItem { Text = "Germany", Value = "DE" },
+                            new SelectListItem { Text = "France", Value = "FR" },
+                            new SelectListItem { Text = "Other", Value = "Other" }
+                        }, "Value", "Text"), new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.Country)
+                    </div>
+                </div>
+                <div class="form-col">
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.ZipCode)
+                        @Html.TextBoxFor(m => m.ZipCode, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.ZipCode)
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>
+                    @Html.CheckBoxFor(m => m.TermsAccepted)
+                    I agree to the @Html.ActionLink("Terms of Service", "Terms", "Home") and @Html.ActionLink("Privacy Policy", "Privacy", "Home")
+                </label>
+                @Html.ValidationMessageFor(m => m.TermsAccepted)
+            </div>
+
+            <div class="form-group">
+                <label>
+                    @Html.CheckBoxFor(m => m.ReceiveOffers)
+                    I want to receive special offers and updates via email
+                </label>
+            </div>
+
+            <button type="submit" class="btn-register-submit">Create Account</button>
+
+            <div class="login-link">
+                Already have an account? @Html.ActionLink("Sign in here", "Login", "Account")
+            </div>
+        }
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

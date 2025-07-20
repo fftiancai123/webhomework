@@ -1,0 +1,172 @@
+﻿@model IEnumerable<WonderlandAdventure.Models.Hotel>
+@{
+    ViewBag.Title = "Official WonderLand Hotels";
+}
+
+<div class="page-header">
+    <h1>Official WonderLand Hotels</h1>
+    <p>Extend your magical adventure with our themed accommodations, all located within minutes of the park entrance</p>
+</div>
+
+<div class="hotels-container">
+    @foreach (var hotel in Model)
+    {
+        <div class="hotel-card">
+            <img src="@hotel.ImageUrl" alt="@hotel.Name" class="hotel-image">
+            <div class="hotel-info">
+                <div class="hotel-price">@hotel.PriceRange</div>
+                <h2 class="hotel-name">@hotel.Name</h2>
+                <div class="hotel-location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>@hotel.Location</span>
+                </div>
+                <p class="hotel-description">
+                    @hotel.Description
+                </p>
+                <div class="hotel-amenities">
+                    @foreach (var amenity in hotel.Amenities)
+                    {
+                        <span class="amenity"><i class="fas fa-check"></i> @amenity</span>
+                    }
+                </div>
+                @Html.ActionLink("Book Now", "Book", new { id = hotel.Id }, new { @class = "btn-book" })
+            </div>
+        </div>
+    }
+</div>
+
+@section styles {
+    <style>
+        .page-header {
+            text-align: center;
+            padding: 50px 0 30px;
+            background: linear-gradient(135deg, #74b9ff, #0984e3);
+            color: white;
+        }
+
+            .page-header h1 {
+                font-size: 3rem;
+                margin-bottom: 15px;
+            }
+
+            .page-header p {
+                font-size: 1.2rem;
+                max-width: 800px;
+                margin: 0 auto;
+            }
+
+        .hotels-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .hotel-card {
+            display: flex;
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+            transition: all 0.3s ease;
+        }
+
+            .hotel-card:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+            }
+
+        .hotel-image {
+            width: 40%;
+            min-height: 300px;
+            object-fit: cover;
+        }
+
+        .hotel-info {
+            width: 60%;
+            padding: 30px;
+            position: relative;
+        }
+
+        .hotel-name {
+            font-size: 2rem;
+            color: #ff6b6b;
+            margin-bottom: 10px;
+        }
+
+        .hotel-location {
+            display: flex;
+            align-items: center;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .hotel-price {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            background-color: #ffbe76;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        .hotel-description {
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .hotel-amenities {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 25px;
+        }
+
+        .amenity {
+            background-color: #f0f0f0;
+            padding: 5px 15px;
+            border-radius: 20px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+
+        .btn-book {
+            background-color: #ff6b6b;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+            .btn-book:hover {
+                background-color: #ff5252;
+                transform: scale(1.05);
+            }
+
+        @@media (max-width: 768px) {
+            .hotel-card {
+                flex-direction: column;
+            }
+
+            .hotel-image, .hotel-info {
+                width: 100%;
+            }
+
+            .hotel-image {
+                height: 250px;
+            }
+        }
+    </style>
+}
+
+@section scripts {
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+}

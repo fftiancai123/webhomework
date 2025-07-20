@@ -1,0 +1,207 @@
+﻿@{
+    ViewBag.Title = "Payment";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="payment-container">
+    <div class="payment-summary">
+        <h2>Order Summary</h2>
+        <div class="summary-item">
+            <span>Ticket Type:</span>
+            <span>@TempData["TicketType"]</span>
+        </div>
+        <div class="summary-item">
+            <span>Quantity:</span>
+            <span>@TempData["Quantity"]</span>
+        </div>
+        <div class="summary-item">
+            <span>Visit Date:</span>
+            <span>@TempData["VisitDate"]</span>
+        </div>
+        <div class="summary-item total">
+            <span>Total Amount:</span>
+            <span>@TempData["TotalAmount"]</span>
+        </div>
+    </div>
+
+    <div class="payment-options">
+        <h2>Select Payment Method</h2>
+
+        @using (Html.BeginForm("CompletePayment", "Tickets", FormMethod.Post))
+        {
+            <div class="payment-method">
+                <input type="radio" id="credit-card" name="paymentOption" value="credit-card" checked>
+                <label for="credit-card">
+                    <i class="fas fa-credit-card"></i>
+                    <span>Credit/Debit Card</span>
+                </label>
+                <div class="card-details">
+                    <div class="form-group">
+                        <label for="card-number">Card Number</label>
+                        <input type="text" id="card-number" class="form-control" placeholder="1234 5678 9012 3456" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-col">
+                            <div class="form-group">
+                                <label for="expiry-date">Expiry Date</label>
+                                <input type="text" id="expiry-date" class="form-control" placeholder="MM/YY" required>
+                            </div>
+                        </div>
+                        <div class="form-col">
+                            <div class="form-group">
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" class="form-control" placeholder="123" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="card-name">Name on Card</label>
+                        <input type="text" id="card-name" class="form-control" placeholder="John Doe" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="payment-method">
+                <input type="radio" id="cash" name="paymentOption" value="cash">
+                <label for="cash">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <span>Pay at Park (Cash)</span>
+                </label>
+                <div class="cash-details">
+                    <p>You can pay in cash when you arrive at the park. Your tickets will be reserved for 24 hours.</p>
+                </div>
+            </div>
+
+            <button type="submit" class="btn-payment">Complete Payment</button>
+        }
+    </div>
+</div>
+
+<style>
+    .payment-container {
+        max-width: 1000px;
+        margin: 50px auto;
+        padding: 0 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .payment-summary {
+        width: 45%;
+        min-width: 300px;
+        background-color: white;
+        border-radius: 15px;
+        padding: 30px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        margin-bottom: 30px;
+    }
+
+        .payment-summary h2 {
+            font-size: 1.8rem;
+            color: #ff6b6b;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+    .summary-item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px dashed #ddd;
+    }
+
+        .summary-item.total {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #74b9ff;
+            border-bottom: none;
+            margin-top: 20px;
+        }
+
+    .payment-options {
+        width: 45%;
+        min-width: 300px;
+        background-color: white;
+        border-radius: 15px;
+        padding: 30px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        margin-bottom: 30px;
+    }
+
+        .payment-options h2 {
+            font-size: 1.8rem;
+            color: #ff6b6b;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+    .payment-method {
+        margin-bottom: 25px;
+        border: 2px solid #eee;
+        border-radius: 10px;
+        padding: 15px;
+        transition: all 0.3s ease;
+    }
+
+        .payment-method input[type="radio"] {
+            display: none;
+        }
+
+        .payment-method label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            font-weight: bold;
+            color: #555;
+        }
+
+            .payment-method label i {
+                font-size: 1.5rem;
+                margin-right: 15px;
+                color: #74b9ff;
+            }
+
+        .payment-method input[type="radio"]:checked + label {
+            color: #ff6b6b;
+        }
+
+        .payment-method input[type="radio"]:checked ~ .card-details,
+        .payment-method input[type="radio"]:checked ~ .cash-details {
+            display: block;
+        }
+
+    .card-details, .cash-details {
+        display: none;
+        margin-top: 15px;
+        padding-top: 15px;
+        border-top: 1px solid #eee;
+    }
+
+    .btn-payment {
+        display: block;
+        width: 100%;
+        padding: 15px;
+        background-color: #ff6b6b;
+        color: white;
+        border: none;
+        border-radius: 30px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-top: 20px;
+    }
+
+        .btn-payment:hover {
+            background-color: #ff5252;
+            transform: scale(1.02);
+        }
+
+    @@media (max-width: 768px) {
+        .payment-summary, .payment-options {
+            width: 100%;
+        }
+    }
+</style>

@@ -1,0 +1,75 @@
+﻿@model WonderlandAdventure.Models.Hotel
+@{
+    ViewBag.Title = "Booking Confirmation";
+}
+
+<div class="confirmation-container">
+    <div class="confirmation-icon">
+        <i class="fas fa-check-circle"></i>
+    </div>
+    <h1>Booking Confirmed!</h1>
+    <p>Thank you for booking your stay at <strong>@Model.Name</strong>.</p>
+    <p>A confirmation email has been sent to your registered email address.</p>
+
+    <div class="hotel-info">
+        <h3>@Model.Name</h3>
+        <p>@Model.Location</p>
+        <p>@Model.PriceRange</p>
+    </div>
+
+    <a href="@Url.Action("Index", "Hotels")" class="btn btn-primary">Back to Hotels</a>
+</div>
+
+@section styles {
+    <style>
+        .confirmation-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 40px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .confirmation-icon {
+            font-size: 5rem;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        .confirmation-container h1 {
+            color: #ff6b6b;
+            margin-bottom: 20px;
+        }
+
+        .hotel-info {
+            margin: 30px 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+        }
+
+        .btn-primary {
+            background-color: #ff6b6b;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+            .btn-primary:hover {
+                background-color: #ff5252;
+                transform: scale(1.05);
+            }
+    </style>
+}
+
+@section scripts {
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+}

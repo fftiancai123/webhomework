@@ -1,0 +1,101 @@
+﻿@model WonderlandAdventure.Models.LoginViewModel
+@{
+    ViewBag.Title = "Login | WonderLand Adventures";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="page-header">
+    <h1>Welcome Back!</h1>
+    <p>Login to your WonderLand Adventures account to access your tickets, bookings, and special offers.</p>
+</div>
+
+<div class="login-container">
+    <div class="login-form">
+        <h2 class="form-title">Login to Your Account</h2>
+
+        <div class="login-options">
+            <div class="login-tab active" id="visitorTab">Visitor Login</div>
+            <div class="login-tab" id="adminTab">Admin Login</div>
+        </div>
+
+        <div class="admin-hint" id="adminHint">
+            <h4>Admin Account Information</h4>
+            <p>For demonstration purposes, use one of these admin accounts:</p>
+            <ul>
+                <li>Username: <strong>yx</strong> | Password: <strong>123</strong></li>
+                <li>Username: <strong>sss</strong> | Password: <strong>aaa</strong></li>
+            </ul>
+        </div>
+
+        @using (Html.BeginForm("Login", "Account", FormMethod.Post, new { id = "loginForm" }))
+        {
+            @Html.AntiForgeryToken()
+            <input type="hidden" id="adminTabActive" name="adminTabActive" value="false" />
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.Username)
+                @Html.TextBoxFor(m => m.Username, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Username)
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.Password)
+                @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Password)
+            </div>
+
+            <div class="form-group">
+                <label>
+                    @Html.CheckBoxFor(m => m.RememberMe)
+                    Remember me
+                </label>
+            </div>
+
+            <button type="submit" class="btn-login-submit">Login</button>
+
+            <div class="register-link">
+                Don't have an account? @Html.ActionLink("Register here", "Register", "Account")
+            </div>
+        }
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Switch between visitor and admin login
+        function switchLoginType(type) {
+            const visitorTab = document.getElementById('visitorTab');
+            const adminTab = document.getElementById('adminTab');
+            const adminHint = document.getElementById('adminHint');
+            const adminTabActive = document.getElementById('adminTabActive');
+
+            if (type === 'admin') {
+                visitorTab.classList.remove('active');
+                adminTab.classList.add('active');
+                adminHint.classList.add('show');
+                adminTabActive.value = "true";
+                document.querySelector('.form-title').textContent = 'Admin Login';
+            } else {
+                visitorTab.classList.add('active');
+                adminTab.classList.remove('active');
+                adminHint.classList.remove('show');
+                adminTabActive.value = "false";
+                document.querySelector('.form-title').textContent = 'Visitor Login';
+            }
+        }
+
+        document.getElementById('visitorTab').addEventListener('click', function() {
+            switchLoginType('visitor');
+        });
+
+        document.getElementById('adminTab').addEventListener('click', function() {
+            switchLoginType('admin');
+        });
+
+        // Show login message if exists
+        @if (TempData["LoginMessage"] != null)
+        {
+            <text>alert('@TempData["LoginMessage"]');</text>
+        }
+    </script>
+}

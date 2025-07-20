@@ -1,0 +1,681 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - WonderLand Adventures</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    @RenderSection("styles", required: false)
+    <style>
+        :root {
+            --hotel: #FF9AA2;
+            --attractions: #FFB7B2;
+            --about: #FFDAC1;
+            --contact: #E2F0CB;
+            --tickets: #B5EAD7;
+        }
+
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f7f7;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ff758c, #ff7eb3);
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        .logo {
+            font-size: 3rem;
+            font-weight: bold;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            margin-bottom: 10px;
+        }
+
+        .slogan {
+            font-size: 1.2rem;
+            color: white;
+            font-style: italic;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: white;
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-item {
+            padding: 10px 25px;
+            margin: 0 10px;
+            border-radius: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #333;
+        }
+
+            .nav-item:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            }
+
+        #hotel {
+            background-color: var(--hotel);
+        }
+
+        #attractions {
+            background-color: var(--attractions);
+        }
+
+        #about {
+            background-color: var(--about);
+        }
+
+        #contact {
+            background-color: var(--contact);
+        }
+
+        #tickets {
+            background-color: var(--tickets);
+        }
+
+        .user-actions {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+        }
+
+        .btn {
+            padding: 8px 20px;
+            border-radius: 20px;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-register {
+            background-color: #ff6b6b;
+            color: white;
+        }
+
+        .btn-login {
+            background-color: white;
+            color: #ff6b6b;
+            margin-left: 10px;
+        }
+
+        .btn-logout {
+            background-color: #ff6b6b;
+            color: white;
+            margin-left: 10px;
+        }
+
+        .btn-profile {
+            background-color: #74b9ff;
+            color: white;
+            margin-left: 10px;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        /* 主界面英雄区域 */
+        /* 主界面英雄区域 - 保持原有大小 */
+        .hero {
+            height: 500px;
+            background-image: url('https://images.unsplash.com/photo-1551632436-cbf8dd35adfa');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+
+            .hero::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0,0,0,0.4);
+            }
+
+        .hero-content {
+            z-index: 1;
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        .btn-explore {
+            background-color: #ffbe76;
+            color: white;
+            font-size: 1.2rem;
+            padding: 12px 30px;
+            border-radius: 30px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin: 50px 0 30px;
+            color: #ff6b6b;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 0 50px;
+            margin-bottom: 50px;
+        }
+
+        .feature {
+            width: 30%;
+            min-width: 300px;
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+        }
+
+            .feature:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+            }
+
+        .feature-img {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .feature-content {
+            padding: 20px;
+        }
+
+        .feature h3 {
+            font-size: 1.5rem;
+            color: #ff6b6b;
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* 通用页面头部样式 */
+        .page-header {
+            text-align: center;
+            padding: 50px 0;
+            background: linear-gradient(135deg, #74b9ff, #0984e3);
+            color: white;
+            margin-bottom: 30px;
+        }
+
+            .page-header h1 {
+                font-size: 3rem;
+                margin-bottom: 15px;
+            }
+
+            .page-header p {
+                font-size: 1.2rem;
+                max-width: 800px;
+                margin: 0 auto;
+            }
+
+        /* 景点卡片样式 */
+        .attractions-container {
+            max-width: 1200px;
+            margin: 0 auto 50px;
+            padding: 0 20px;
+        }
+
+        .attraction-card {
+            display: flex;
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+            transition: all 0.3s ease;
+        }
+
+            .attraction-card:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+            }
+
+        .attraction-image {
+            width: 40%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .attraction-info {
+            width: 60%;
+            padding: 30px;
+            position: relative;
+        }
+
+        .attraction-name {
+            font-size: 2rem;
+            color: #ff6b6b;
+            margin-bottom: 10px;
+        }
+
+        .attraction-location {
+            display: flex;
+            align-items: center;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .attraction-description {
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .thrill-meter {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .thrill-label {
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        .thrill-level {
+            height: 20px;
+            border-radius: 10px;
+            background: linear-gradient(to right, #b5ead7, #ffdac1, #ff9aa2);
+        }
+
+        .attraction-details {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 25px;
+        }
+
+        .detail {
+            background-color: #f0f0f0;
+            padding: 5px 15px;
+            border-radius: 20px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+
+        .btn-ride {
+            background-color: #ff6b6b;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+            .btn-ride:hover {
+                background-color: #ff5252;
+                transform: scale(1.05);
+            }
+
+        /* 排班表样式 */
+        .schedule-container, .theater-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+            .schedule-container h1, .theater-container h1 {
+                color: #ff6b6b;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+        .schedule-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .info-card {
+            flex: 1;
+            min-width: 200px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+            .info-card h2 {
+                color: #74b9ff;
+                margin-bottom: 15px;
+                font-size: 1.3rem;
+            }
+
+        .wait-time {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #ff6b6b;
+            margin: 15px 0;
+        }
+
+        .btn-fastpass {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 20px;
+            background-color: #ffbe76;
+            color: white;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+            .btn-fastpass:hover {
+                background-color: #ffa94d;
+                transform: scale(1.05);
+            }
+
+        .theater-info {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+            .theater-info p {
+                margin: 10px 0;
+                display: flex;
+                align-items: center;
+            }
+
+            .theater-info i {
+                margin-right: 10px;
+                width: 20px;
+                text-align: center;
+                color: #ff6b6b;
+            }
+
+        .show-times {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .time-slot {
+            padding: 10px 20px;
+            background-color: #ffbe76;
+            color: white;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        .theater-notice {
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #e2f0cb;
+            border-radius: 10px;
+            font-size: 0.9rem;
+        }
+
+        .btn-back {
+            display: inline-block;
+            padding: 10px 25px;
+            background-color: #74b9ff;
+            color: white;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+            .btn-back:hover {
+                background-color: #0984e3;
+                transform: scale(1.05);
+            }
+
+        .back-link {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+
+        /* 页脚样式 */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 50px 0 20px;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto 30px;
+        }
+
+        .footer-section {
+            width: 30%;
+            min-width: 300px;
+            margin-bottom: 30px;
+        }
+
+            .footer-section h3 {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+                color: #ffbe76;
+            }
+
+            .footer-section p, .footer-section a {
+                color: #bbb;
+                line-height: 1.6;
+            }
+
+            .footer-section a {
+                display: block;
+                margin-bottom: 10px;
+                text-decoration: none;
+            }
+
+                .footer-section a:hover {
+                    color: white;
+                }
+
+        .contact-info {
+            margin-top: 20px;
+        }
+
+        .copyright {
+            border-top: 1px solid #555;
+            padding-top: 20px;
+            color: #bbb;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+            .social-icons a {
+                display: inline-block;
+                margin: 0 10px;
+                color: white;
+                font-size: 1.5rem;
+            }
+
+        /* 响应式设计 */
+        @@media (max-width: 768px) {
+            .nav-item {
+                padding: 8px 15px;
+                margin: 0 5px;
+                font-size: 0.8rem;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+
+            .attraction-card {
+                flex-direction: column;
+            }
+
+                .attraction-card .attraction-image,
+                .attraction-card .attraction-info {
+                    width: 100%;
+                }
+
+                .attraction-card .attraction-image {
+                    height: 250px;
+                }
+
+            .footer-section {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="user-actions">
+            @if (Request.IsAuthenticated)
+            {
+                if (User.IsInRole("Admin"))
+                {
+                    <a href="@Url.Action("Index", "Admin")" class="welcome-link">
+                        <span>Welcome, Admin @User.Identity.Name!</span>
+                    </a>
+                    using (Html.BeginForm("Logout", "Account", FormMethod.Post, new { id = "logoutForm" }))
+                    {
+                        @Html.AntiForgeryToken()
+                        <a href="javascript:document.getElementById('logoutForm').submit()" class="btn btn-logout">Logout</a>
+                    }
+                    @Html.ActionLink("Profile", "Profile", "Admin", null, new { @class = "btn btn-profile" })
+                }
+                else
+                {
+                    <span>Welcome, @User.Identity.Name!</span>
+                    using (Html.BeginForm("Logout", "Account", FormMethod.Post, new { id = "logoutForm" }))
+                    {
+                        @Html.AntiForgeryToken()
+                        <a href="javascript:document.getElementById('logoutForm').submit()" class="btn btn-logout">Logout</a>
+                    }
+                }
+            }
+            else
+            {
+                @Html.ActionLink("Register", "Register", "Account", null, new { @class = "btn btn-register" })
+                @Html.ActionLink("Login", "Login", "Account", null, new { @class = "btn btn-login" })
+            }
+        </div>
+        <div class="logo">WonderLand Adventures</div>
+        <div class="slogan">@(User.IsInRole("Admin") ? "Admin Dashboard" : "Where Magic Meets Adventure!")</div>
+    </header>
+
+    <nav>
+        @Html.ActionLink("Home", "Index", "Home", null, new { @class = "nav-item", id = "home" })
+        @Html.ActionLink("Hotels", "Index", "Hotels", null, new { @class = "nav-item", id = "hotel" })
+        @Html.ActionLink("Attractions", "Index", "Attractions", null, new { @class = "nav-item", id = "attractions" })
+        @Html.ActionLink("About Us", "Index", "About", null, new { @class = "nav-item", id = "about" })
+        @Html.ActionLink("Contact", "Index", "Contact", null, new { @class = "nav-item", id = "contact" })
+        @Html.ActionLink("Buy Tickets", "Index", "Tickets", null, new { @class = "nav-item", id = "tickets" })
+    </nav>
+
+    @RenderBody()
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>WonderLand Adventures</h3>
+                <p>Creating magical memories since 1985. Our mission is to provide unforgettable experiences for guests of all ages through thrilling attractions, spectacular shows, and exceptional service.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="#">Park Hours</a>
+                <a href="#">Ticket Prices</a>
+                <a href="#">Accessibility</a>
+                <a href="#">Park Rules</a>
+                <a href="#">Careers</a>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <div class="contact-info">
+                    <p>123 Fantasy Lane, Orlando, FL 32830</p>
+                    <p>Phone: +1 (800) 555-1234</p>
+                    <p>Email: info@wonderland.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; @DateTime.Now.Year WonderLand Adventures. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

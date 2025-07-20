@@ -1,0 +1,124 @@
+﻿@{
+    ViewBag.Title = "Order Confirmation";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="confirmation-container">
+    <div class="confirmation-card">
+        <div class="confirmation-icon">
+            <i class="fas fa-check-circle"></i>
+        </div>
+        <h2>Thank You for Your Purchase!</h2>
+        <p>Your tickets have been successfully ordered. A confirmation email has been sent to your registered email address.</p>
+
+        <div class="confirmation-details">
+            <div class="detail-item">
+                <span>Order Number:</span>
+                <span>WL@(DateTime.Now.ToString("yyyyMMddHHmmss"))</span>
+            </div>
+            <div class="detail-item">
+                <span>Total Paid:</span>
+                <span>@TempData["TotalAmount"]</span>
+            </div>
+            <div class="detail-item">
+                <span>Visit Date:</span>
+                <span>@TempData["VisitDate"]</span>
+            </div>
+        </div>
+
+        <div class="confirmation-actions">
+            <a href="@Url.Action("Index", "Home")" class="btn-home">Back to Home</a>
+            <a href="#" class="btn-print">Print Tickets</a>
+        </div>
+    </div>
+</div>
+
+<style>
+    .confirmation-container {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 0 20px;
+    }
+
+    .confirmation-card {
+        background-color: white;
+        border-radius: 15px;
+        padding: 40px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+
+    .confirmation-icon {
+        font-size: 5rem;
+        color: #4CAF50;
+        margin-bottom: 20px;
+    }
+
+    .confirmation-card h2 {
+        font-size: 2rem;
+        color: #ff6b6b;
+        margin-bottom: 15px;
+    }
+
+    .confirmation-card p {
+        color: #555;
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+        line-height: 1.6;
+    }
+
+    .confirmation-details {
+        max-width: 400px;
+        margin: 0 auto 30px;
+        text-align: left;
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .detail-item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+        .detail-item span:first-child {
+            font-weight: bold;
+            color: #555;
+        }
+
+        .detail-item span:last-child {
+            color: #74b9ff;
+        }
+
+    .confirmation-actions {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .btn-home, .btn-print {
+        padding: 12px 30px;
+        border-radius: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+    .btn-home {
+        background-color: #74b9ff;
+        color: white;
+    }
+
+    .btn-print {
+        background-color: white;
+        color: #ff6b6b;
+        border: 2px solid #ff6b6b;
+    }
+
+        .btn-home:hover, .btn-print:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+</style>

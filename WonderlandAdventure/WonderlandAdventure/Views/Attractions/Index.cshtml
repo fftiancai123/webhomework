@@ -1,0 +1,75 @@
+﻿@model IEnumerable<WonderlandAdventure.Models.Attraction>
+@{
+    ViewBag.Title = "Thrilling Attractions";
+}
+
+<div class="page-header">
+    <h1>Thrilling Attractions</h1>
+    <p>Experience heart-pounding excitement with our world-class rides and attractions for all ages</p>
+</div>
+
+<div class="attractions-container">
+    @foreach (var attraction in Model)
+    {
+        <div class="attraction-card">
+            <img src="@attraction.ImageUrl" alt="@attraction.Name" class="attraction-image">
+            <div class="attraction-info">
+                <h2 class="attraction-name">@attraction.Name</h2>
+                <div class="attraction-location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>@attraction.Zone</span>
+                </div>
+                <div class="thrill-meter">
+                    <span class="thrill-label">Thrill Level:</span>
+                    <div class="thrill-level" style="width: @(attraction.ThrillLevel)%;"></div>
+                </div>
+                <p class="attraction-description">
+                    @attraction.Description
+                </p>
+                <div class="attraction-details">
+                    @if (attraction.MinHeight > 0)
+                    {
+                        <span class="detail"><i class="fas fa-ruler-vertical"></i> Height: @attraction.MinHeight" min</span>
+                    }
+                    else
+                    {
+                        <span class="detail"><i class="fas fa-child"></i> All Ages</span>
+                    }
+                    <span class="detail"><i class="fas fa-history"></i> Duration: @attraction.Duration</span>
+                    @foreach (var detail in attraction.Details)
+                    {
+                        <span class="detail">@detail</span>
+                    }
+                </div>
+                @Html.ActionLink("View Wait Time", "Schedule", new { id = attraction.Id }, new { @class = "btn-ride" })
+            </div>
+        </div>
+    }
+
+    <!-- 添加大剧院作为特殊景点 -->
+    <div class="attraction-card">
+        <img src="/Content/images/theater.jpg" alt="Wonder Theater" class="attraction-image">
+        <div class="attraction-info">
+            <h2 class="attraction-name">Wonder Theater</h2>
+            <div class="attraction-location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Grand Theater Zone</span>
+            </div>
+            <div class="thrill-meter">
+                <span class="thrill-label">Thrill Level:</span>
+                <div class="thrill-level" style="width: 30%;"></div>
+            </div>
+            <p class="attraction-description">
+                Spectacular live shows featuring talented performers, stunning special effects,
+                and beloved characters. Our theatrical productions change seasonally.
+            </p>
+            <div class="attraction-details">
+                <span class="detail"><i class="fas fa-theater-masks"></i> Live Performance</span>
+                <span class="detail"><i class="fas fa-users"></i> Capacity: 145</span>
+                <span class="detail"><i class="fas fa-ticket-alt"></i> Requires Ticket</span>
+                <span class="detail"><i class="fas fa-history"></i> Duration: 30:00</span>
+            </div>
+            @Html.ActionLink("View Show Times", "Schedule", new { id = 6 }, new { @class = "btn-ride" })
+        </div>
+    </div>
+</div>

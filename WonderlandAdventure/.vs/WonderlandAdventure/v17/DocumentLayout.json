@@ -1,0 +1,654 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|c:\\users\\threadripper\\desktop\\task2\\wonderlandadventure\\wonderlandadventure\\wonderlandadventure\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|solutionrelative:wonderlandadventure\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|c:\\users\\threadripper\\desktop\\task2\\wonderlandadventure\\wonderlandadventure\\wonderlandadventure\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|solutionrelative:wonderlandadventure\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|c:\\users\\threadripper\\desktop\\task2\\wonderlandadventure\\wonderlandadventure\\wonderlandadventure\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|solutionrelative:wonderlandadventure\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|c:\\users\\threadripper\\desktop\\task2\\wonderlandadventure\\wonderlandadventure\\wonderlandadventure\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|solutionrelative:wonderlandadventure\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|c:\\users\\threadripper\\desktop\\task2\\wonderlandadventure\\wonderlandadventure\\wonderlandadventure\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|solutionrelative:wonderlandadventure\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|c:\\users\\threadripper\\desktop\\task2\\wonderlandadventure\\wonderlandadventure\\wonderlandadventure\\content\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|solutionrelative:wonderlandadventure\\content\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|c:\\users\\threadripper\\desktop\\task2\\wonderlandadventure\\wonderlandadventure\\wonderlandadventure\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|solutionrelative:wonderlandadventure\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|c:\\users\\threadripper\\desktop\\task2\\wonderlandadventure\\wonderlandadventure\\wonderlandadventure\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|solutionrelative:wonderlandadventure\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|c:\\users\\threadripper\\desktop\\task2\\wonderlandadventure\\wonderlandadventure\\wonderlandadventure\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|solutionrelative:wonderlandadventure\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|c:\\users\\threadripper\\desktop\\task2\\wonderlandadventure\\wonderlandadventure\\wonderlandadventure\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|solutionrelative:wonderlandadventure\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|c:\\users\\threadripper\\desktop\\task2\\wonderlandadventure\\wonderlandadventure\\wonderlandadventure\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|solutionrelative:wonderlandadventure\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|c:\\users\\threadripper\\desktop\\task2\\wonderlandadventure\\wonderlandadventure\\wonderlandadventure\\views\\about\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|solutionrelative:wonderlandadventure\\views\\about\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|c:\\users\\threadripper\\desktop\\task2\\wonderlandadventure\\wonderlandadventure\\wonderlandadventure\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|solutionrelative:wonderlandadventure\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|c:\\users\\threadripper\\desktop\\task2\\wonderlandadventure\\wonderlandadventure\\wonderlandadventure\\controllers\\aboutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|solutionrelative:wonderlandadventure\\controllers\\aboutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|c:\\users\\threadripper\\desktop\\task2\\wonderlandadventure\\wonderlandadventure\\wonderlandadventure\\views\\hotels\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|solutionrelative:wonderlandadventure\\views\\hotels\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|c:\\users\\threadripper\\desktop\\task2\\wonderlandadventure\\wonderlandadventure\\wonderlandadventure\\views\\attractions\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|solutionrelative:wonderlandadventure\\views\\attractions\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|c:\\users\\threadripper\\desktop\\task2\\wonderlandadventure\\wonderlandadventure\\wonderlandadventure\\models\\hotel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|solutionrelative:wonderlandadventure\\models\\hotel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|c:\\users\\threadripper\\desktop\\task2\\wonderlandadventure\\wonderlandadventure\\wonderlandadventure\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|solutionrelative:wonderlandadventure\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|c:\\users\\threadripper\\desktop\\task2\\wonderlandadventure\\wonderlandadventure\\wonderlandadventure\\views\\hotels\\confirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|solutionrelative:wonderlandadventure\\views\\hotels\\confirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|c:\\users\\threadripper\\desktop\\task2\\wonderlandadventure\\wonderlandadventure\\wonderlandadventure\\views\\hotels\\book.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|solutionrelative:wonderlandadventure\\views\\hotels\\book.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|c:\\users\\threadripper\\desktop\\task2\\wonderlandadventure\\wonderlandadventure\\wonderlandadventure\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|solutionrelative:wonderlandadventure\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|c:\\users\\threadripper\\desktop\\task2\\wonderlandadventure\\wonderlandadventure\\wonderlandadventure\\models\\attraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|solutionrelative:wonderlandadventure\\models\\attraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|c:\\users\\threadripper\\desktop\\task2\\wonderlandadventure\\wonderlandadventure\\wonderlandadventure\\controllers\\attractionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|solutionrelative:wonderlandadventure\\controllers\\attractionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|WonderlandAdventure||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|c:\\users\\threadripper\\desktop\\task2\\wonderlandadventure\\wonderlandadventure\\wonderlandadventure\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|solutionrelative:wonderlandadventure\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|c:\\users\\threadripper\\desktop\\task2\\wonderlandadventure\\wonderlandadventure\\wonderlandadventure\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|solutionrelative:wonderlandadventure\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|c:\\users\\threadripper\\desktop\\task2\\wonderlandadventure\\wonderlandadventure\\wonderlandadventure\\controllers\\ticketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|solutionrelative:wonderlandadventure\\controllers\\ticketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|c:\\users\\threadripper\\desktop\\task2\\wonderlandadventure\\wonderlandadventure\\wonderlandadventure\\views\\tickets\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|solutionrelative:wonderlandadventure\\views\\tickets\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|c:\\users\\threadripper\\desktop\\task2\\wonderlandadventure\\wonderlandadventure\\wonderlandadventure\\views\\tickets\\confirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|solutionrelative:wonderlandadventure\\views\\tickets\\confirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|c:\\users\\threadripper\\desktop\\task2\\wonderlandadventure\\wonderlandadventure\\wonderlandadventure\\views\\tickets\\payment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|solutionrelative:wonderlandadventure\\views\\tickets\\payment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|c:\\users\\threadripper\\desktop\\task2\\wonderlandadventure\\wonderlandadventure\\wonderlandadventure\\views\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|solutionrelative:wonderlandadventure\\views\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|c:\\users\\threadripper\\desktop\\task2\\wonderlandadventure\\wonderlandadventure\\wonderlandadventure\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|solutionrelative:wonderlandadventure\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|c:\\users\\threadripper\\desktop\\task2\\wonderlandadventure\\wonderlandadventure\\wonderlandadventure\\views\\attractions\\theaterschedule.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|solutionrelative:wonderlandadventure\\views\\attractions\\theaterschedule.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|c:\\users\\threadripper\\desktop\\task2\\wonderlandadventure\\wonderlandadventure\\wonderlandadventure\\views\\attractions\\schedule.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|solutionrelative:wonderlandadventure\\views\\attractions\\schedule.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|c:\\users\\threadripper\\desktop\\task2\\wonderlandadventure\\wonderlandadventure\\wonderlandadventure\\controllers\\hotelscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|solutionrelative:wonderlandadventure\\controllers\\hotelscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|c:\\users\\threadripper\\desktop\\task2\\wonderlandadventure\\wonderlandadventure\\wonderlandadventure\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|solutionrelative:wonderlandadventure\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|c:\\users\\threadripper\\desktop\\task2\\wonderlandadventure\\wonderlandadventure\\wonderlandadventure\\models\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|solutionrelative:wonderlandadventure\\models\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB9119A8-369B-4180-BD67-341989C76E2A}|WonderlandAdventure\\WonderlandAdventure.csproj|c:\\users\\threadripper\\desktop\\task2\\wonderlandadventure\\wonderlandadventure\\wonderlandadventure\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Views\\Web.config",
+              "RelativeDocumentMoniker": "WonderlandAdventure\\Views\\Web.config",
+              "ToolTip": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Views\\Web.config",
+              "RelativeToolTip": "WonderlandAdventure\\Views\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-07-06T13:41:17.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "WonderlandAdventure\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "WonderlandAdventure\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAAC4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T09:22:37.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Models\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "WonderlandAdventure\\Models\\RegisterViewModel.cs",
+              "ToolTip": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Models\\RegisterViewModel.cs",
+              "RelativeToolTip": "WonderlandAdventure\\Models\\RegisterViewModel.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAIwBwAAABkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T10:56:59.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "WonderlandAdventure\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "WonderlandAdventure\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAI0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-06T10:57:41.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "WonderlandAdventure\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "WonderlandAdventure\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T11:09:25.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Views\\About\\Index.cshtml",
+              "RelativeDocumentMoniker": "WonderlandAdventure\\Views\\About\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Views\\About\\Index.cshtml",
+              "RelativeToolTip": "WonderlandAdventure\\Views\\About\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-06T10:26:20.074Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AboutController.cs",
+              "DocumentMoniker": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Controllers\\AboutController.cs",
+              "RelativeDocumentMoniker": "WonderlandAdventure\\Controllers\\AboutController.cs",
+              "ToolTip": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Controllers\\AboutController.cs",
+              "RelativeToolTip": "WonderlandAdventure\\Controllers\\AboutController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T10:25:11.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "WonderlandAdventure\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "WonderlandAdventure\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T09:21:13.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Models\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "WonderlandAdventure\\Models\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Models\\LoginViewModel.cs",
+              "RelativeToolTip": "WonderlandAdventure\\Models\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T11:08:16.443Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Hotel.cs",
+              "DocumentMoniker": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Models\\Hotel.cs",
+              "RelativeDocumentMoniker": "WonderlandAdventure\\Models\\Hotel.cs",
+              "ToolTip": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Models\\Hotel.cs",
+              "RelativeToolTip": "WonderlandAdventure\\Models\\Hotel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T09:22:51.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "WonderlandAdventure\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "WonderlandAdventure\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-06T11:08:44.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "WonderlandAdventure\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "WonderlandAdventure\\Views\\Admin\\Index.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAABMAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-06T11:10:00.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WonderlandAdventure\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WonderlandAdventure\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAHYCAAAAAAAAAAAkwKUCAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-06T09:24:00.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_AdminLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "WonderlandAdventure\\Views\\Shared\\_AdminLayout.cshtml",
+              "ToolTip": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeToolTip": "WonderlandAdventure\\Views\\Shared\\_AdminLayout.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAkwDYAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-06T12:52:26.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Site.css",
+              "DocumentMoniker": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Content\\Site.css",
+              "RelativeDocumentMoniker": "WonderlandAdventure\\Content\\Site.css",
+              "ToolTip": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Content\\Site.css",
+              "RelativeToolTip": "WonderlandAdventure\\Content\\Site.css",
+              "ViewState": "AgIAAMgFAAAAAAAAAAAUwAcGAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-07-06T10:27:11.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Views\\Hotels\\Index.cshtml",
+              "RelativeDocumentMoniker": "WonderlandAdventure\\Views\\Hotels\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Views\\Hotels\\Index.cshtml",
+              "RelativeToolTip": "WonderlandAdventure\\Views\\Hotels\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-06T09:42:33.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Views\\Attractions\\Index.cshtml",
+              "RelativeDocumentMoniker": "WonderlandAdventure\\Views\\Attractions\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Views\\Attractions\\Index.cshtml",
+              "RelativeToolTip": "WonderlandAdventure\\Views\\Attractions\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-06T10:10:57.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Confirmation.cshtml",
+              "DocumentMoniker": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Views\\Hotels\\Confirmation.cshtml",
+              "RelativeDocumentMoniker": "WonderlandAdventure\\Views\\Hotels\\Confirmation.cshtml",
+              "ToolTip": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Views\\Hotels\\Confirmation.cshtml",
+              "RelativeToolTip": "WonderlandAdventure\\Views\\Hotels\\Confirmation.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAUwDYAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-06T09:43:21.7Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "book.cshtml",
+              "DocumentMoniker": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Views\\Hotels\\book.cshtml",
+              "RelativeDocumentMoniker": "WonderlandAdventure\\Views\\Hotels\\book.cshtml",
+              "ToolTip": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Views\\Hotels\\book.cshtml",
+              "RelativeToolTip": "WonderlandAdventure\\Views\\Hotels\\book.cshtml",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAUwHAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-06T09:42:58.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "WonderlandAdventure\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "WonderlandAdventure\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAUwFMAAAB7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-06T09:24:20.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "BundleConfig.cs",
+              "DocumentMoniker": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\App_Start\\BundleConfig.cs",
+              "RelativeDocumentMoniker": "WonderlandAdventure\\App_Start\\BundleConfig.cs",
+              "ToolTip": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\App_Start\\BundleConfig.cs",
+              "RelativeToolTip": "WonderlandAdventure\\App_Start\\BundleConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T12:16:43.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Attraction.cs",
+              "DocumentMoniker": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Models\\Attraction.cs",
+              "RelativeDocumentMoniker": "WonderlandAdventure\\Models\\Attraction.cs",
+              "ToolTip": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Models\\Attraction.cs",
+              "RelativeToolTip": "WonderlandAdventure\\Models\\Attraction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T09:23:10.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "WonderlandAdventure\\App_Start\\RouteConfig.cs",
+              "ToolTip": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "WonderlandAdventure\\App_Start\\RouteConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T09:24:35.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AttractionsController.cs",
+              "DocumentMoniker": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Controllers\\AttractionsController.cs",
+              "RelativeDocumentMoniker": "WonderlandAdventure\\Controllers\\AttractionsController.cs",
+              "ToolTip": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Controllers\\AttractionsController.cs",
+              "RelativeToolTip": "WonderlandAdventure\\Controllers\\AttractionsController.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAmwHoAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T09:22:00.712Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Schedule.cshtml",
+              "DocumentMoniker": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Views\\Attractions\\Schedule.cshtml",
+              "RelativeDocumentMoniker": "WonderlandAdventure\\Views\\Attractions\\Schedule.cshtml",
+              "ToolTip": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Views\\Attractions\\Schedule.cshtml",
+              "RelativeToolTip": "WonderlandAdventure\\Views\\Attractions\\Schedule.cshtml",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAUwGQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-06T10:11:18.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "TheaterSchedule.cshtml",
+              "DocumentMoniker": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Views\\Attractions\\TheaterSchedule.cshtml",
+              "RelativeDocumentMoniker": "WonderlandAdventure\\Views\\Attractions\\TheaterSchedule.cshtml",
+              "ToolTip": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Views\\Attractions\\TheaterSchedule.cshtml",
+              "RelativeToolTip": "WonderlandAdventure\\Views\\Attractions\\TheaterSchedule.cshtml",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAUwGIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-06T10:11:35.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "WonderlandAdventure",
+              "DocumentMoniker": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure.csproj",
+              "RelativeDocumentMoniker": "WonderlandAdventure\\WonderlandAdventure.csproj",
+              "ToolTip": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure.csproj",
+              "RelativeToolTip": "WonderlandAdventure\\WonderlandAdventure.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-07-06T10:47:46.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Web.config",
+              "RelativeDocumentMoniker": "WonderlandAdventure\\Web.config",
+              "ToolTip": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Web.config",
+              "RelativeToolTip": "WonderlandAdventure\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-07-06T11:29:43.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Views\\Tickets\\Index.cshtml",
+              "RelativeDocumentMoniker": "WonderlandAdventure\\Views\\Tickets\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Views\\Tickets\\Index.cshtml",
+              "RelativeToolTip": "WonderlandAdventure\\Views\\Tickets\\Index.cshtml",
+              "ViewState": "AgIAAJ0AAAAAAAAAAAAUwMcAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-06T10:38:44.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Payment.cshtml",
+              "DocumentMoniker": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Views\\Tickets\\Payment.cshtml",
+              "RelativeDocumentMoniker": "WonderlandAdventure\\Views\\Tickets\\Payment.cshtml",
+              "ToolTip": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Views\\Tickets\\Payment.cshtml",
+              "RelativeToolTip": "WonderlandAdventure\\Views\\Tickets\\Payment.cshtml",
+              "ViewState": "AgIAAKYAAAAAAAAAAAAAAM4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-06T10:40:05.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "TicketsController.cs",
+              "DocumentMoniker": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Controllers\\TicketsController.cs",
+              "RelativeDocumentMoniker": "WonderlandAdventure\\Controllers\\TicketsController.cs",
+              "ToolTip": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Controllers\\TicketsController.cs",
+              "RelativeToolTip": "WonderlandAdventure\\Controllers\\TicketsController.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAEwEMAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T09:22:18.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Confirmation.cshtml",
+              "DocumentMoniker": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Views\\Tickets\\Confirmation.cshtml",
+              "RelativeDocumentMoniker": "WonderlandAdventure\\Views\\Tickets\\Confirmation.cshtml",
+              "ToolTip": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Views\\Tickets\\Confirmation.cshtml",
+              "RelativeToolTip": "WonderlandAdventure\\Views\\Tickets\\Confirmation.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-06T10:40:43.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ContactController.cs",
+              "DocumentMoniker": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Controllers\\ContactController.cs",
+              "RelativeDocumentMoniker": "WonderlandAdventure\\Controllers\\ContactController.cs",
+              "ToolTip": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Controllers\\ContactController.cs",
+              "RelativeToolTip": "WonderlandAdventure\\Controllers\\ContactController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T10:33:20.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Views\\Contact\\Index.cshtml",
+              "RelativeDocumentMoniker": "WonderlandAdventure\\Views\\Contact\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Views\\Contact\\Index.cshtml",
+              "RelativeToolTip": "WonderlandAdventure\\Views\\Contact\\Index.cshtml",
+              "ViewState": "AgIAACAAAAAAAAAAAAAUwDwAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-06T10:33:52.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Booking.cs",
+              "DocumentMoniker": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Models\\Booking.cs",
+              "RelativeDocumentMoniker": "WonderlandAdventure\\Models\\Booking.cs",
+              "ToolTip": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Models\\Booking.cs",
+              "RelativeToolTip": "WonderlandAdventure\\Models\\Booking.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T09:23:40.19Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Ticket.cs",
+              "DocumentMoniker": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Models\\Ticket.cs",
+              "RelativeDocumentMoniker": "WonderlandAdventure\\Models\\Ticket.cs",
+              "ToolTip": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Models\\Ticket.cs",
+              "RelativeToolTip": "WonderlandAdventure\\Models\\Ticket.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T09:23:24.991Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "HotelsController.cs",
+              "DocumentMoniker": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Controllers\\HotelsController.cs",
+              "RelativeDocumentMoniker": "WonderlandAdventure\\Controllers\\HotelsController.cs",
+              "ToolTip": "C:\\Users\\ThreadRipper\\Desktop\\task2\\WonderlandAdventure\\WonderlandAdventure\\WonderlandAdventure\\Controllers\\HotelsController.cs",
+              "RelativeToolTip": "WonderlandAdventure\\Controllers\\HotelsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T09:21:39.633Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
